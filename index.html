@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Words by Takudzwanashe Michael Mhuru</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="debug.css">
+<style>
+article{
+    display: grid;
+    /*minmax makes column responsive*/
+    grid-template-columns: 1fr minmax(0,8.5in) 1fr;
+    height: 100vh;
+}
+/*tell articles children to stay between 2nd and 3rd column*/
+article * {grid-column: 2/3;}
+</style>
+    </head>
+
+    <body>
+        <article>
+            <p class="debug-center">Article</p>
+        </article>
+<article>
+    <p class="debug-center">Article</p>
+</article>
+    </body>
+</html>
