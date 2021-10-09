@@ -1,9 +1,11 @@
 article{
+  padding: 0.5in 0;
     display: grid;
     /*minmax makes column responsive*/
     grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in[end] 0.5in 1fr;
-    height: 100vh;
-    padding: 0.5in 0;
+   
+    background:linear-gradient(hsl(158, 100%, 96%), rgb(233, 233, 233) 6.5rem);
+ 
 }
 /*tell articles children to stay between 2nd and 3rd column*/
 article * {grid-column: start/end;}
@@ -13,6 +15,21 @@ article * {grid-column: start/end;}
 
     }
 }
+
+h1, p {margin-bottom: 1.2rem ;}
+
+h1    {font: 700 2rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+h2    {font: 700 1.5rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+time  {font: 700 1rem/1.2 "Merriweather"; color: hsl(250, 100%, 83%);}
+h3    {font: 400 1rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+p     {font: 400 1rem/1.5 "Merriweather"; color: hsl(000, 0%, 33%);}
+figcaption  p   {font: 400 1rem/1.5 "Merriweather"; color: rgb(2, 204, 211);}
+
+
+
+
+
+
 .top {
     margin-top: 1em;
     margin-left: 2em;

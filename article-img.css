@@ -1,2 +1,8 @@
 .size-1 {grid-column: 4/5;}
 .size-1 img {width: 85%;}
+
+figcaption{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
