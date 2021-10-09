@@ -84,8 +84,144 @@ a:link {
       /*FOR LIGHT MODE*/
       color: #f2f2f2;
       
-     
     }
+
+    @media only screen  and (max-width: 1024px){
+      *{
+        margin:0;
+        padding: 0;
+        font-size: small;
+      }
+      .contents {
+        /*background-color: #323232;
+        color: #ffffff;*/
+    
+        /*use grid instead of padding*/
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0em;
+        display:grid;
+         
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-areas: "image"
+                             "contacts"
+                             "about";
+  
+    }
+    
+    .top {
+      margin-top: 1em;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      }
+   
+    
+  
+      .nav_contents{
+        margin-left: 1em;
+      }
+      
+      /* Add a black background color to the top navigation */
+      .topnav {
+          /*FOR LIGHT MODE*/
+          background-color:#332064;
+          /*FOR DARK MODE
+          background-color: #f2f2f2;*/
+          overflow: hidden;
+          padding: 1em;
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: none;
+          /*FOR DARK MODE
+          color: #333;*/
+      
+          /*FOR LIGHT MODE*/
+          color: #f2f2f2;
+          text-align: center;
+          padding: 1em 1em 1em 0em;
+          text-decoration: none;
+          font-size: 1.0625em;
+         
+        }
+  
+  
+    }
+  
+    @media only screen  and (max-width: 375px ){
+      *{
+        margin:0;
+        padding: 0;
+        font-size: small;
+      }
+      .contents {
+        /*background-color: #323232;
+        color: #ffffff;*/
+    
+        /*use grid instead of padding*/
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        display:grid;
+         
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-areas: "image"
+                             "about"
+                             "contacts";
+  
+    }
+  
+    .top {
+      margin-top: 1em;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      margin-bottom: 1em;
+      }
+  
+ 
+  
+      .nav_contents{
+        margin-left: 1em;
+      }
+      
+      /* Add a black background color to the top navigation */
+      .topnav {
+        overflow: hidden;
+        padding: 1em;
+        /*FOR LIGHT MODE*/
+        background-color:#332064;
+  
+        /*FOR DARK MODE
+         background-color: #f2f2f2;*/
+         
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: none;
+          text-align: center;
+          padding: 1em 1em 1em 0em;
+          text-decoration: none;
+          font-size: 1.0625em;
+  
+          /*FOR DARK MODE
+          color: #333;*/
+      
+          /*FOR LIGHT MODE*/
+          color: #f2f2f2;
+          
+         
+        }
+  
+  
+    }
+  
+  
+      
 
 
 
