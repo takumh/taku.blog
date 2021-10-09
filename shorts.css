@@ -1,0 +1,240 @@
+.size-1 {grid-column: 4/5;}
+.size-1 img {width: 85%;}
+
+figcaption{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    padding: 0.3in 0;
+      display: grid;
+      /*minmax makes column responsive*/
+      grid-template-columns: 0.5fr 0.15in [start] 0.1in 8in 0.1in[end] 0.15in 0.5fr;
+     
+      background:linear-gradient(hsl(158, 100%, 96%), rgb(233, 233, 233) 6.5rem);
+      text-align: justify;
+      text-justify: inter-word;
+  }
+  /*tell articles children to stay between 2nd and 3rd column*/
+  article * {grid-column: start/end;}
+  
+  @media(max-width: 8.5in){
+      article{ grid-template-columns: 1fr 5% [start] 15% 60%  15% [end] 5% 1fr;
+  
+      }
+  }
+  
+  h1, p {margin-bottom: 1.2rem ;}
+  
+  h1    {font: 700 2rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+  h2    {font: 700 1.5rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+  time  {font: 700 1rem/1.2 "Merriweather"; color: hsl(250, 100%, 83%);}
+  h3    {font: 400 1rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
+  p     {font: 400 1rem/1.5 "Merriweather"; color: hsl(000, 0%, 33%);}
+  figcaption  p   {font: 400 1rem/1.5 "Sacramento"; color: rgb(2, 204, 211);}
+  
+  @media (max-width: 8.5in){:root{ font-size: 18px}}
+  @media (max-width: 5.0in){:root{ font-size: 16px}}
+  
+  
+  
+  
+  
+  .top {
+      margin-top: 1em;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      }
+  a:link {
+      color: rgb(54, 90, 250);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: rgb(140, 0, 255);
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  
+    .nav_contents{
+      margin-left: 1em;
+    }
+    
+    /* Add a black background color to the top navigation */
+    .topnav {
+      overflow: hidden;
+      padding: 1em;
+      /*FOR LIGHT MODE*/
+      background-color:#9c9b9b;
+  
+      /*FOR DARK MODE
+       background-color: #f2f2f2;*/
+       
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: none;
+        text-align: center;
+        padding: 1em 1em 1em 0em;
+        text-decoration: none;
+        font-size: 1.0625em;
+  
+        /*FOR DARK MODE
+        color: #333;*/
+    
+        /*FOR LIGHT MODE*/
+        color: #f2f2f2;
+        
+      }
+  
+      @media only screen  and (max-width: 1024px){
+        *{
+          margin:0;
+          padding: 0;
+          font-size: small;
+        }
+        .contents {
+          /*background-color: #323232;
+          color: #ffffff;*/
+      
+          /*use grid instead of padding*/
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+          margin-bottom: 0em;
+          display:grid;
+           
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.5fr 0.5fr 1fr;
+          grid-template-areas: "image"
+                               "contacts"
+                               "about";
+    
+      }
+      
+      .top {
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 2em;
+        }
+     
+      
+    
+        .nav_contents{
+          margin-left: 1em;
+        }
+        
+        /* Add a black background color to the top navigation */
+        .topnav {
+            /*FOR LIGHT MODE*/
+            background-color:#332064;
+            /*FOR DARK MODE
+            background-color: #f2f2f2;*/
+            overflow: hidden;
+            padding: 1em;
+          }
+          
+          /* Style the links inside the navigation bar */
+          .topnav a {
+            float: none;
+            /*FOR DARK MODE
+            color: #333;*/
+        
+            /*FOR LIGHT MODE*/
+            color: #f2f2f2;
+            text-align: center;
+            padding: 1em 1em 1em 0em;
+            text-decoration: none;
+            font-size: 1.0625em;
+           
+          }
+    
+    
+      }
+    
+      @media only screen  and (max-width: 375px ){
+        *{
+          margin:0;
+          padding: 0;
+          font-size: small;
+        }
+        .contents {
+          /*background-color: #323232;
+          color: #ffffff;*/
+      
+          /*use grid instead of padding*/
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+          margin-bottom: 0.5em;
+          display:grid;
+           
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.5fr 0.5fr 1fr;
+          grid-template-areas: "image"
+                               "about"
+                               "contacts";
+    
+      }
+    
+      .top {
+        margin-top: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+        }
+    
+   
+    
+        .nav_contents{
+          margin-left: 1em;
+        }
+        
+        /* Add a black background color to the top navigation */
+        .topnav {
+          overflow: hidden;
+          padding: 1em;
+          /*FOR LIGHT MODE*/
+          background-color:#332064;
+    
+          /*FOR DARK MODE
+           background-color: #f2f2f2;*/
+           
+          }
+          
+          /* Style the links inside the navigation bar */
+          .topnav a {
+            float: none;
+            text-align: center;
+            padding: 1em 1em 1em 0em;
+            text-decoration: none;
+            font-size: 1.0625em;
+    
+            /*FOR DARK MODE
+            color: #333;*/
+        
+            /*FOR LIGHT MODE*/
+            color: #f2f2f2;
+            
+           
+          }
+    
+    
+      }
+    
+    
+        
+  
+  
+  
+  

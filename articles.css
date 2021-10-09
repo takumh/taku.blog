@@ -26,6 +26,8 @@ h3    {font: 400 1rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
 p     {font: 400 1rem/1.5 "Merriweather"; color: hsl(000, 0%, 33%);}
 figcaption  p   {font: 400 1rem/1.5 "Merriweather"; color: rgb(2, 204, 211);}
 
+@media (max-width: 8.5in){:root{ font-size: 18px}}
+@media (max-width: 5.0in){:root{ font-size: 16px}}
 
 
 
