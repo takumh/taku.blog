@@ -1,0 +1,35 @@
+.contents {
+      /*use grid instead of padding*/
+    margin-left: 12em;
+    margin-right: 12em;
+    margin-bottom: 2em;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "image about";
+   
+}
+
+img{
+    grid-area: image;
+    width: 16em;
+    height: 16em;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 100%;
+    padding: 2em 2em;
+}
+.image {
+    flex-basis: 40%;
+    
+    }
+
+    .about{
+        margin: 2em;
+        grid-area: about;
+        text-align: start;
+      
+      }
+
+      .abt{
+        line-height: 2;
+      }

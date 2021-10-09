@@ -13,3 +13,62 @@ article * {grid-column: start/end;}
 
     }
 }
+.top {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    }
+a:link {
+    color: rgb(54, 90, 250);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(140, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .nav_contents{
+    margin-left: 1em;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    overflow: hidden;
+    padding: 1em;
+    /*FOR LIGHT MODE*/
+    background-color:#9c9b9b;
+
+    /*FOR DARK MODE
+     background-color: #f2f2f2;*/
+     
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: none;
+      text-align: center;
+      padding: 1em 1em 1em 0em;
+      text-decoration: none;
+      font-size: 1.0625em;
+
+      /*FOR DARK MODE
+      color: #333;*/
+  
+      /*FOR LIGHT MODE*/
+      color: #f2f2f2;
+      
+     
+    }
+
+
+
