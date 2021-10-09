@@ -5,7 +5,8 @@ article{
     grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in[end] 0.5in 1fr;
    
     background:linear-gradient(hsl(158, 100%, 96%), rgb(233, 233, 233) 6.5rem);
- 
+    text-align: justify;
+    text-justify: inter-word;
 }
 /*tell articles children to stay between 2nd and 3rd column*/
 article * {grid-column: start/end;}
