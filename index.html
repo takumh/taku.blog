@@ -8,25 +8,48 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="debug.css">
+<link rel="stylesheet" href="-debug.css">
+<link rel="stylesheet" href="article-img.css">
+<link rel="stylesheet" href="articles.css">
 <style>
-article{
-    display: grid;
-    /*minmax makes column responsive*/
-    grid-template-columns: 1fr minmax(0,8.5in) 1fr;
-    height: 100vh;
-}
-/*tell articles children to stay between 2nd and 3rd column*/
-article * {grid-column: 2/3;}
+h1, p:not(:last-child) {margin-bottom: 1.2rem ;}
+
+h1    {font: 700 2rem/1.2 "Merriweather";}
+h2    {font: 700 1.5rem/1.2 "Merriweather";}
+time  {font: 700 1rem/1.2 "Merriweather";}
+h3    {font: 400 1rem/1.2 "Merriweather";}
+p     {font: 400 1rem/1.5 "Merriweather";}
+
+a { box-shadow: inset 0 -0.25em aquamarine}
+
+@media (max-width: 8.5in){:root{ font-size: 18px}}
+@media (max-width: 5.0in){:root{ font-size: 16px}}
+
 </style>
     </head>
 
     <body>
-        <article>
-            <p class="debug-center">Article</p>
-        </article>
 <article>
-    <p class="debug-center">Article</p>
+    <img class="size-1" src="brothers.jpg">
+    <article id="swimming-brothers">
+    <h2><a href="#swimming-brothers"></a>The water was nice</h2>
+    <!--time datetime="10-08-2021">Oct 08, 2021</time-->
+    <p> 
+        The water was nice....
+        That is what Chukwu said as we swam. The waves were slapping against our bare skin, gently, 
+        unlike the way Mama’s palms would feel against our bottoms that night when we went home late. 
+        We looked in the distance, at the hills where Papa said the gods lived and I wondered aloud if the gods liked to swim too. 
+        Chukwu laughed but I knew he saw far beyond my joke, far beyond the hills too. I laughed back and sipped sea water, 
+        it tasted of salt, and the tears that the forefathers had cried on their way to America,
+         tears we would cry when Chukwu disappeared on a boat to America too, the land he had seen beyond the hills. 
+         The water would not slap gently against Mama that day as she tried to swim after the boat. It would hit her, 
+         and knock the words out of her mouth as she prayed to the hill gods to bring back her son. 
+         They would not answer just as they had not answered my forefathers. 
+         Chukwu had laughed because he knew the gods did not like to swim. What a shame, because the water was nice.
+        
+    </p>
+</article>
+    <img class="size-1" src="sisters.jpg">
 </article>
     </body>
 </html>
