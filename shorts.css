@@ -1,6 +1,6 @@
 .size-1 {grid-column: 4/5;}
 .size-1 img {width: 85%;}
-
+.size-1 img.big  {width: 500px; height: 400px;}
 figcaption{
     margin-top: 0.5rem;
     display: flex;
