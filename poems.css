@@ -1,7 +1,7 @@
 .poems_button{
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 0.3em;
     border: none;
     outline: none;
     cursor: pointer;
@@ -9,12 +9,14 @@
     color:#ffffff;
     text-align: left;
     transition: background 0.2s;
+    position: relative;
 }
 
 .poems_button::after{
     content: '\25be';
     float: right;
-    transform: scale(2.5);
+    transform: scale(1.5);
+    position:absolute; top:0.5em; right:0.8em;
 }
 
 .poems_button--active  + .poems__content {display: block;}

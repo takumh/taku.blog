@@ -20,7 +20,7 @@ article * {grid-column: start/end;}
 h1, p {margin-bottom: 1.2rem ;}
 h2{margin-bottom: 0;}
 h1    {font: 700 2rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
-h2    {font: 700 1.5rem/1.2 "Merriweather"; color: rgb(255, 255, 255);}
+h2    {font: 700 1.5rem/1.2 "Merriweather"; color: rgb(000, 0%, 33%);}
 time  {font: 700 1rem/1.2 "Merriweather"; color: hsl(250, 100%, 83%);}
 h3    {font: 400 1rem/1.2 "Merriweather"; color: hsl(000, 0%, 33%);}
 p     {font: 400 1rem/1.5 "Merriweather"; color: hsl(000, 0%, 33%);}
